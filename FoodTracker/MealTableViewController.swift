@@ -12,9 +12,7 @@ class MealTableViewController: UITableViewController {
     // MARK: Properties
 
     var meals = [Meal]()
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,24 +41,27 @@ class MealTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return meals.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "MealTableViewCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MealTableViewCell
 
-        // Configure the cell...
+        // Fetches the appropriate meal for the data source layout.
+        let meal = meals[indexPath.row]
+
+        cell.nameLabel.text = meal.name
+        cell.photoImageView.image = meal.photo
+        cell.ratingControl.rating = meal.rating
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
