@@ -118,18 +118,17 @@
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="CIf-lV-YPD"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="O9g-Us-3wD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="6uD-ty-4X0">
                             <connections>
-                                <segue destination="ibo-qQ-HWA" kind="unwind" unwindAction="unwindToMealListWithSender:" id="R0g-tW-QSo"/>
+                                <segue destination="ibo-qQ-HWA" kind="unwind" unwindAction="unwindToMealList:" id="d1N-0h-JTA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cancel" destination="zDV-xg-g36" id="DGf-Gh-cWa"/>
                         <outlet property="nameTextField" destination="QSh-gS-bGz" id="8sp-ma-Ti2"/>
                         <outlet property="photoImageView" destination="JaG-4v-naU" id="OTU-Nf-WRM"/>
                         <outlet property="ratingControl" destination="MvN-cZ-4f9" id="gsg-TM-9d6"/>
-                        <outlet property="saveButton" destination="gIH-gE-shJ" id="2X7-6K-ott"/>
+                        <outlet property="saveButton" destination="6uD-ty-4X0" id="2mF-nz-ClY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -140,7 +139,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1427.5" y="122.5"/>
+            <point key="canvasLocation" x="1487" y="122"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dr9-o4-C2s">
@@ -176,7 +175,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abi-bm-Ezp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840.5" y="122.5"/>
+            <point key="canvasLocation" x="801" y="122"/>
         </scene>
     </scenes>
     <resources>
