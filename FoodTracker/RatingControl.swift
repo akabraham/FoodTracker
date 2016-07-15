@@ -32,13 +32,13 @@ class RatingControl: UIView {
         for _ in 0..<starCount {
             let button = UIButton()
 
-            button.setImage(emptyStarImage, for: .normal)
+            button.setImage(emptyStarImage, for: UIControlState())
             button.setImage(filledStarImage, for: .selected)
             button.setImage(filledStarImage, for: [.highlighted, .selected])
 
             button.adjustsImageWhenHighlighted = false
 
-            button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchDown)
+            button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(_:)), for: .touchDown)
             ratingButtons += [button]
             addSubview(button)
         }
@@ -66,7 +66,7 @@ class RatingControl: UIView {
 
     // MARK: Button Action
 
-    func ratingButtonTapped(button: UIButton) {
+    func ratingButtonTapped(_ button: UIButton) {
         rating = ratingButtons.index(of: button)! + 1
 
         updateButtonSelectionStates()

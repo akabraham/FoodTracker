@@ -54,7 +54,7 @@ class MealTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MealTableViewCell
 
         // Fetches the appropriate meal for the data source layout.
-        let meal = meals[indexPath.row]
+        let meal = meals[(indexPath as NSIndexPath).row]
 
         cell.nameLabel.text = meal.name
         cell.photoImageView.image = meal.photo
@@ -63,7 +63,7 @@ class MealTableViewController: UITableViewController {
         return cell
     }
 
-    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+    @IBAction func unwindToMealList(_ sender: UIStoryboardSegue) {
         if let sourceViewController = sender.sourceViewController as? MealViewController, meal = sourceViewController.meal {
             // Add a new meal.
             // TODO: verify `IndexPath` is correct, not `NSIndexPath`
