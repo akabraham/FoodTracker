@@ -70,6 +70,7 @@ class MealTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            meals.remove(at: (indexPath as NSIndexPath).row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -107,7 +108,7 @@ class MealTableViewController: UITableViewController {
             // Get the cell that generated this segue.
             if let selectedMealCell = sender as? MealTableViewCell {
                 let indexPath = tableView.indexPath(for: selectedMealCell)!
-                let selectedMeal = meals[indexPath.row]
+                let selectedMeal = meals[(indexPath as NSIndexPath).row]
                 mealDetailViewController.meal = selectedMeal
             }
         }
@@ -120,7 +121,7 @@ class MealTableViewController: UITableViewController {
         if let sourceViewController = sender.sourceViewController as? MealViewController, meal = sourceViewController.meal {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 // Update an existing meal.
-                meals[selectedIndexPath.row] = meal
+                meals[(selectedIndexPath as NSIndexPath).row] = meal
                 tableView.reloadRows(at: [selectedIndexPath], with: .none)
             }
             else {
