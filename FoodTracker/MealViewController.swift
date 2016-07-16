@@ -9,16 +9,14 @@
 import UIKit
 
 class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
     // MARK: Properties
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
 
-    /*
-     This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)` or constructed as part of adding a new meal.
-    */
+    // This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)` or constructed as part of adding a new meal.
     var meal: Meal?
 
     override func viewDidLoad() {
@@ -45,6 +43,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
 
     // MARK: UITextFieldDelegate
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
@@ -53,7 +52,6 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
         // Disable the Save button while editing.
-        // FIXME:
         saveButton.isEnabled = false
     }
 
@@ -69,6 +67,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
 
     // MARK: UIImagePickerControllerDelegate
+
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // Dismiss the picker if the user canceled.
         dismiss(animated: true, completion: nil)
@@ -112,6 +111,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     // MARK: Actions
+
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         // Hide the keyboard.
         nameTextField.resignFirstResponder()

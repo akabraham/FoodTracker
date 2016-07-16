@@ -9,7 +9,6 @@
 import UIKit
 
 class RatingControl: UIView {
-
     // MARK: Properties
 
     var rating = 0 {
@@ -78,5 +77,4 @@ class RatingControl: UIView {
             button.isSelected = index < rating
         }
     }
-
 }
