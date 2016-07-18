@@ -27,15 +27,18 @@ class IntentHandler: INExtension, INStartWorkoutIntentHandling, INPauseWorkoutIn
         
         return self
     }
+
+    // MARK: - INSendMessageIntentHandling
     
-    // MARK: - INStartWorkoutIntentHandling
     func handle(sendMessage intent: INSendMessageIntent, completion: (INSendMessageIntentResponse) -> Void) {
         print("Message intent is being handled.")
         let userActivity = NSUserActivity(activityType: NSStringFromClass(INSendMessageIntent.self))
         let response = INSendMessageIntentResponse(code: .success, userActivity: userActivity)
         completion(response)
     }
-    
+
+    // MARK: - INStartWorkoutIntentHandling
+
     // Implement resolution methods to provide additional information about your intent (optional).
     func resolveIsOpenEnded(forStartWorkout intent: INStartWorkoutIntent, with completion: (INBooleanResolutionResult) -> Void) {
         let resolutionResult = INBooleanResolutionResult.success(with: false)
