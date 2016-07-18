@@ -18,6 +18,12 @@
 		8C5A7DA11D381BFC0062CBFD /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A7DA01D381BFC0062CBFD /* Meal.swift */; };
 		8C5A7DA31D3824010062CBFD /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A7DA21D3824010062CBFD /* MealTableViewCell.swift */; };
 		8C5A7DA51D38356D0062CBFD /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A7DA41D38356D0062CBFD /* MealTableViewController.swift */; };
+		8CBAE6A61D3D6247008B131A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBAE6A51D3D6247008B131A /* IntentHandler.swift */; };
+		8CBAE6AF1D3D6247008B131A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBAE6AE1D3D6247008B131A /* IntentsUI.framework */; };
+		8CBAE6B21D3D6247008B131A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBAE6B11D3D6247008B131A /* IntentViewController.swift */; };
+		8CBAE6B51D3D6247008B131A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBAE6B31D3D6247008B131A /* MainInterface.storyboard */; };
+		8CBAE6B91D3D6247008B131A /* SiriFoodTrackerUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8CBAE6AC1D3D6247008B131A /* SiriFoodTrackerUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CBAE6BC1D3D6247008B131A /* SiriFoodTracker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8CBAE6A31D3D6246008B131A /* SiriFoodTracker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +34,36 @@
 			remoteGlobalIDString = 8C5A7D781D36DDBC0062CBFD;
 			remoteInfo = FoodTracker;
 		};
+		8CBAE6B71D3D6247008B131A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C5A7D711D36DDBC0062CBFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CBAE6AB1D3D6247008B131A;
+			remoteInfo = SiriFoodTrackerUI;
+		};
+		8CBAE6BA1D3D6247008B131A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C5A7D711D36DDBC0062CBFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CBAE6A21D3D6246008B131A;
+			remoteInfo = SiriFoodTracker;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CBAE6C31D3D6247008B131A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8CBAE6BC1D3D6247008B131A /* SiriFoodTracker.appex in Embed App Extensions */,
+				8CBAE6B91D3D6247008B131A /* SiriFoodTrackerUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8C5A7D791D36DDBC0062CBFD /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +81,14 @@
 		8C5A7DA01D381BFC0062CBFD /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8C5A7DA21D3824010062CBFD /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		8C5A7DA41D38356D0062CBFD /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		8CBAE6A31D3D6246008B131A /* SiriFoodTracker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriFoodTracker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBAE6A51D3D6247008B131A /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		8CBAE6A71D3D6247008B131A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CBAE6AC1D3D6247008B131A /* SiriFoodTrackerUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriFoodTrackerUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBAE6AE1D3D6247008B131A /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		8CBAE6B11D3D6247008B131A /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		8CBAE6B41D3D6247008B131A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8CBAE6B61D3D6247008B131A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +106,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CBAE6A01D3D6246008B131A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBAE6A91D3D6247008B131A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBAE6AF1D3D6247008B131A /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +129,9 @@
 			children = (
 				8C5A7D7B1D36DDBC0062CBFD /* FoodTracker */,
 				8C5A7D901D36DDBC0062CBFD /* FoodTrackerTests */,
+				8CBAE6A41D3D6247008B131A /* SiriFoodTracker */,
+				8CBAE6B01D3D6247008B131A /* SiriFoodTrackerUI */,
+				8CBAE6AD1D3D6247008B131A /* Frameworks */,
 				8C5A7D7A1D36DDBC0062CBFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +141,8 @@
 			children = (
 				8C5A7D791D36DDBC0062CBFD /* FoodTracker.app */,
 				8C5A7D8D1D36DDBC0062CBFD /* FoodTrackerTests.xctest */,
+				8CBAE6A31D3D6246008B131A /* SiriFoodTracker.appex */,
+				8CBAE6AC1D3D6247008B131A /* SiriFoodTrackerUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +174,33 @@
 			path = FoodTrackerTests;
 			sourceTree = "<group>";
 		};
+		8CBAE6A41D3D6247008B131A /* SiriFoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8CBAE6A51D3D6247008B131A /* IntentHandler.swift */,
+				8CBAE6A71D3D6247008B131A /* Info.plist */,
+			);
+			path = SiriFoodTracker;
+			sourceTree = "<group>";
+		};
+		8CBAE6AD1D3D6247008B131A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CBAE6AE1D3D6247008B131A /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CBAE6B01D3D6247008B131A /* SiriFoodTrackerUI */ = {
+			isa = PBXGroup;
+			children = (
+				8CBAE6B11D3D6247008B131A /* IntentViewController.swift */,
+				8CBAE6B31D3D6247008B131A /* MainInterface.storyboard */,
+				8CBAE6B61D3D6247008B131A /* Info.plist */,
+			);
+			path = SiriFoodTrackerUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,10 +211,13 @@
 				8C5A7D751D36DDBC0062CBFD /* Sources */,
 				8C5A7D761D36DDBC0062CBFD /* Frameworks */,
 				8C5A7D771D36DDBC0062CBFD /* Resources */,
+				8CBAE6C31D3D6247008B131A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8CBAE6B81D3D6247008B131A /* PBXTargetDependency */,
+				8CBAE6BB1D3D6247008B131A /* PBXTargetDependency */,
 			);
 			name = FoodTracker;
 			productName = FoodTracker;
@@ -149,6 +242,40 @@
 			productReference = 8C5A7D8D1D36DDBC0062CBFD /* FoodTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		8CBAE6A21D3D6246008B131A /* SiriFoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBAE6C01D3D6247008B131A /* Build configuration list for PBXNativeTarget "SiriFoodTracker" */;
+			buildPhases = (
+				8CBAE69F1D3D6246008B131A /* Sources */,
+				8CBAE6A01D3D6246008B131A /* Frameworks */,
+				8CBAE6A11D3D6246008B131A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriFoodTracker;
+			productName = SiriFoodTracker;
+			productReference = 8CBAE6A31D3D6246008B131A /* SiriFoodTracker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8CBAE6AB1D3D6247008B131A /* SiriFoodTrackerUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CBAE6BD1D3D6247008B131A /* Build configuration list for PBXNativeTarget "SiriFoodTrackerUI" */;
+			buildPhases = (
+				8CBAE6A81D3D6247008B131A /* Sources */,
+				8CBAE6A91D3D6247008B131A /* Frameworks */,
+				8CBAE6AA1D3D6247008B131A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriFoodTrackerUI;
+			productName = SiriFoodTrackerUI;
+			productReference = 8CBAE6AC1D3D6247008B131A /* SiriFoodTrackerUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +297,18 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8C5A7D781D36DDBC0062CBFD;
 					};
+					8CBAE6A21D3D6246008B131A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F4DLYVJW97;
+						DevelopmentTeamName = "Andrew Abraham";
+						ProvisioningStyle = Automatic;
+					};
+					8CBAE6AB1D3D6247008B131A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F4DLYVJW97;
+						DevelopmentTeamName = "Andrew Abraham";
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 8C5A7D741D36DDBC0062CBFD /* Build configuration list for PBXProject "FoodTracker" */;
@@ -187,6 +326,8 @@
 			targets = (
 				8C5A7D781D36DDBC0062CBFD /* FoodTracker */,
 				8C5A7D8C1D36DDBC0062CBFD /* FoodTrackerTests */,
+				8CBAE6A21D3D6246008B131A /* SiriFoodTracker */,
+				8CBAE6AB1D3D6247008B131A /* SiriFoodTrackerUI */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +348,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBAE6A11D3D6246008B131A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBAE6AA1D3D6247008B131A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBAE6B51D3D6247008B131A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +390,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CBAE69F1D3D6246008B131A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBAE6A61D3D6247008B131A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CBAE6A81D3D6247008B131A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBAE6B21D3D6247008B131A /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -241,6 +413,16 @@
 			isa = PBXTargetDependency;
 			target = 8C5A7D781D36DDBC0062CBFD /* FoodTracker */;
 			targetProxy = 8C5A7D8E1D36DDBC0062CBFD /* PBXContainerItemProxy */;
+		};
+		8CBAE6B81D3D6247008B131A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CBAE6AB1D3D6247008B131A /* SiriFoodTrackerUI */;
+			targetProxy = 8CBAE6B71D3D6247008B131A /* PBXContainerItemProxy */;
+		};
+		8CBAE6BB1D3D6247008B131A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CBAE6A21D3D6246008B131A /* SiriFoodTracker */;
+			targetProxy = 8CBAE6BA1D3D6247008B131A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -259,6 +441,14 @@
 				8C5A7D861D36DDBC0062CBFD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8CBAE6B31D3D6247008B131A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CBAE6B41D3D6247008B131A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -356,6 +546,7 @@
 		8C5A7D971D36DDBC0062CBFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -368,6 +559,7 @@
 		8C5A7D981D36DDBC0062CBFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,6 +595,54 @@
 			};
 			name = Release;
 		};
+		8CBAE6BE1D3D6247008B131A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriFoodTrackerUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker.SiriFoodTrackerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8CBAE6BF1D3D6247008B131A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriFoodTrackerUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker.SiriFoodTrackerUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8CBAE6C11D3D6247008B131A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriFoodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker.SiriFoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8CBAE6C21D3D6247008B131A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriFoodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FoodTracker.SiriFoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,6 +672,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		8CBAE6BD1D3D6247008B131A /* Build configuration list for PBXNativeTarget "SiriFoodTrackerUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBAE6BE1D3D6247008B131A /* Debug */,
+				8CBAE6BF1D3D6247008B131A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8CBAE6C01D3D6247008B131A /* Build configuration list for PBXNativeTarget "SiriFoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CBAE6C11D3D6247008B131A /* Debug */,
+				8CBAE6C21D3D6247008B131A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
