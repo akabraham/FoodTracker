@@ -161,6 +161,8 @@
 				TargetAttributes = {
 					8C5A7D781D36DDBC0062CBFD = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F4DLYVJW97;
+						DevelopmentTeamName = "Andrew Abraham";
 						ProvisioningStyle = Automatic;
 					};
 					8C5A7D8C1D36DDBC0062CBFD = {
